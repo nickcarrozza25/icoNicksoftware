@@ -1,3 +1,12 @@
+/*
+
+Developed, designed, and tested by Nick Carrozza
+
+
+*/
+
+
+
 #include <iostream>
 #include <cmath>
 #include <vector> 
