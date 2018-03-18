@@ -1,0 +1,72 @@
+<!--Nick Carrozza-->
+<!--Professor Johnson CMPT 120-->
+<!--October 8,2015-->
+
+
+<!doctype html>
+<html>
+<head>
+	<title> The Game </title>
+	<meta charset="utf-8"/>
+   	<script src="project.js" type="text/javascript"></script>
+   	<script src="locations.js" type="text/javascript"></script>
+   	<script src="userPuzzle.js" type="text/javascript"></script>
+   	<link rel="stylesheet" type="text/css" href= "pagedesign.css">
+</head>
+
+<body onload = "updateButtons();">
+	<h1> The Ultimate Office Game Experience </h1> 
+
+<div id= "line1"> Your boss (shown below)</div>
+
+<div id="bossImage"> <img src="OfficeSpaceIMG.jpeg" alt= "gamepic" style="width:288px; height:208px;"> </div>
+
+<div id= "line2"> requires one task of you. You must staple paper together and write your name on it with both pen and pencil.</div>
+
+<div id= "italicLine">However, you have no idea where the necessary items are located and you must find them. </div>
+
+<div id= "line3"> You are at your starting location, and have no idea where you are. Enter a direction as either North (N), South (S), East (E), or West (W) to explore.</div>
+
+<div id= "takeDescrip"> You must find and take an item before it can appear in your personal inventory. To do this, enter "T" or "t" in the input box and hit the "enter" button at a given location. To reveal if an item is in fact at your current location, enter "X" or "x" in the input box. </div>
+
+<div id= "line4"> When you have all items and are ready to move on, type "I'm ready" in the input box to access the command register. Your choices from there are the following: "staple the paper together", "write my name in pen", "write my name in pencil", and "give it to my boss". Keep in mind, your boss's office is located all the way at Building I. </div> 
+
+<p id="locationUpdate"> </p>
+<p id = "Examine"> </p>
+<p id="score"> Score: </p>
+<p id="Inventory"> Inventory: </p>
+<p id="History"></p> 
+<p id="staplePerformed"></p>
+<p id="penPerformed"></p>
+<p id="pencilPerformed"></p>
+<p id="finalAlert"></p>
+<div id="winImage"></div>
+
+	<input type = "text" id = "inputBox">
+	<button id="go" onclick = "inputBox();">Enter</button>
+	<button id="HelpButton" onclick= "help();">Help</button>
+	<button id="North" onclick= "Go(North);">North</button>
+	<button id="South" onclick= "Go(South);">South</button>
+	<button id="East" onclick= "Go(East);">East</button>
+	<button id="West" onclick= "Go(West);">West</button>
+
+	
+
+	<p id = "Help"> </p>
+	<p id = "error"> </p>
+
+	<div id= "gameMapHead"> Game Map <div> 
+
+	<div id= "gameMap"> <img src="CMPT120picture.png" alt= "gamepic" style="width:404px; height:328px;"></div>
+
+	<div><a href="mailto:nicholas.carrozza1@marist.edu">
+	Click here to email me for help
+
+</a></div> 
+</body>
+
+</html>
+
+
+
+
